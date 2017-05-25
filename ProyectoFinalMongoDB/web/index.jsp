@@ -29,8 +29,8 @@ and open the template in the editor.
     <body>
         <h1>Agenda de Contactos</h1>
         <ul>
-            <li><a href="./contacto/insertarContacto.jsp">Insertar Contacto</a></li>
-            <li><a href="./contacto/listadoContactos.jsp">Listado Contactos</a></li>
+            <li><h3><a href="./insertarContacto">Insertar Contacto</a></h3></li>
+            <li><h3><a href="./listadoContactos">Listado Contactos</a></h3></li>
         </ul>
     </body>
 </html>

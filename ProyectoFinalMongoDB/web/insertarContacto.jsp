@@ -28,11 +28,11 @@ and open the template in the editor.
     </head>
     <body>
         <h1>Insertar Contacto</h1>
-        <form id="formRegistrarPersona" name="formRegistrarPersona" action="./insert" method="post" onsubmit="return validar();">
+        <form id="formRegistrarContacto" name="formRegistrarContacto" action="./insertarContacto" method="post">
             <table border="1">
                 <thead>
                     <tr>
-                        <th colspan="10"><h1>Registrar Persona</h1></th>   
+                        <th colspan="10"><h1>Registrar Contacto</h1></th>   
                     </tr>
                 </thead>
                 <tbody>
@@ -49,23 +49,25 @@ and open the template in the editor.
                         <td colspan="5"><input type="text" id="textApellidoContacto" name="textApellidoContacto" value="" /></td>
                     </tr>
                     <tr>
-                        <td colspan="5"><label id="labelDireccion" for="textDireccion">Dirección:</label></td>
-                        <td colspan="5"><input type="text" id="textDireccion" name="textDireccion" value="" /></td>
+                        <td colspan="5"><label id="labelDireccionContacto" for="textDireccionContacto">Dirección:</label></td>
+                        <td colspan="5"><input type="text" id="textDireccionContacto" name="textDireccionContacto" value="" /></td>
                     </tr>
                     <tr>
-                        <td colspan="5"><label id="labelTelefono" for="textTelefono">Teléfono:</label></td>
-                        <td colspan="5"><input type="text" id="textTelefono" name="textTelefono" value="" /></td>
+                        <td colspan="5"><label id="labelTelefonoContacto" for="textTelefonoContacto">Teléfono:</label></td>
+                        <td colspan="5"><input type="text" id="textTelefonoContacto" name="textTelefonoContacto" value="" /></td>
                     </tr>
                     <tr>
-                        <td colspan="5"><label id="labelCorreoElectronico" for="textCorreoElectronico">Correo Electrónico:</label></td>
-                        <td colspan="5"><input type="email" id="textCorreoElectronico" name="textCorreoElectronico" value="" /></td>
+                        <td colspan="5"><label id="labelCorreoElectronicoContacto" for="textCorreoElectronicoContacto">Correo Electrónico:</label></td>
+                        <td colspan="5"><input type="email" id="textCorreoElectronicoContacto" name="textCorreoElectronicoContacto" value="" /></td>
                     </tr>
                     <tr>
-                        <td colspan="5"><label id="labelSexo" for="radioSexo">Sexo:</label></td>
-                    </tr><td colspan="5"><input type="radio" id="radioSexo" name="radioSexo" value="" /></td>
-                <tr>
-                    <td colspan="5"><input type="submit" id="buttonRegistrarContacto" name="buttonRegistrarContacto" value="Registrar Contacto" /></td>  
-                </tr>
+                        <td colspan="5"><label id="labelSexoContacto" for="radioSexoContacto">Sexo:</label></td>
+                        <td colspan="5"><input type="radio" id="radioSexoContacto" name="radioSexoContacto" value="Masculino"/><label>Masculino</label>
+                        <input type="radio" id="radioSexoContacto" name="radioSexoContacto" value="Femenino"/><label>Femenino</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5"><input type="submit" id="buttonRegistrarContacto" name="buttonRegistrarContacto" value="Registrar Contacto" /></td>  
+                    </tr>
                 </tbody>
             </table>
         </form>

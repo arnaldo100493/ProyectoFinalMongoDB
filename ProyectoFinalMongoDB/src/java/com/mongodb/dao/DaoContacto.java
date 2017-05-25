@@ -15,7 +15,7 @@ import java.util.List;
 
 /**
  *
- * @author ArnaldoAndres
+ * @author FABAME
  */
 public class DaoContacto implements InterfaceDaoContacto {
 
@@ -23,7 +23,7 @@ public class DaoContacto implements InterfaceDaoContacto {
     private DBCollection dbCollection;
 
     public DaoContacto() {
-        this.db = DBConnection.connectToMongoDB("agenda");
+        this.db = DBConnection.connectToMongoDB("dbagenda");
         this.dbCollection = this.db.getCollection("contacto");
     }
 

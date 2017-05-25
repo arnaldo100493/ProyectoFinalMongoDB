@@ -5,21 +5,20 @@
  */
 package com.mongodb.interfaces;
 
-import com.mongodb.DB;
 import com.mongodb.model.Contacto;
 import java.util.List;
 
 /**
  *
- * @author E301
+ * @author FABAME
  */
 public interface InterfaceDaoContacto {
 
     public boolean insertar(Contacto contacto) throws Exception;
 
     public Contacto consultarPorCedula(String cedula) throws Exception;
-    
-     public Contacto consultarPorCorreoElectronico(String correoElectronico) throws Exception;
+
+    public Contacto consultarPorCorreoElectronico(String correoElectronico) throws Exception;
 
     public List<Contacto> listar() throws Exception;
 
