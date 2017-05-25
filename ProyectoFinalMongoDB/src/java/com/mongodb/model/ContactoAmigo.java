@@ -5,11 +5,13 @@
  */
 package com.mongodb.model;
 
+import java.io.Serializable;
+
 /**
  *
  * @author E301
  */
-public class ContactoAmigo {
+public class ContactoAmigo implements Serializable {
 
     public ContactoAmigo() {
 

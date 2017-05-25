@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
-    <servlet>
-        <servlet-name>ServletInsertarContacto</servlet-name>
-        <servlet-class>com.mongodb.web.servlet.ServletInsertarContacto</servlet-class>
-    </servlet>
+    <listener>
+        <description>ServletContextListener</description>
+        <listener-class>com.mongodb.util.MongoDBServletListener</listener-class>
+    </listener>
     <servlet>
         <servlet-name>ServletInsertarContactoAmigo</servlet-name>
         <servlet-class>com.mongodb.web.servlet.ServletInsertarContactoAmigo</servlet-class>
@@ -16,10 +16,6 @@
         <servlet-name>ServletListadoContactosAmigos</servlet-name>
         <servlet-class>com.mongodb.web.servlet.ServletListadoContactosAmigos</servlet-class>
     </servlet>
-    <servlet-mapping>
-        <servlet-name>ServletInsertarContacto</servlet-name>
-        <url-pattern>/insertarContacto</url-pattern>
-    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>ServletInsertarContactoAmigo</servlet-name>
         <url-pattern>/insertarContactoAmigo</url-pattern>
