@@ -20,7 +20,7 @@ public class EJBContacto {
     
     private Contacto contacto;
     private List<Contacto> listadoContactos;
-    private InterfaceDaoContacto daoContacto;
+    private DaoContacto daoContacto;
     
     public EJBContacto() {
         this.contacto = new Contacto();
