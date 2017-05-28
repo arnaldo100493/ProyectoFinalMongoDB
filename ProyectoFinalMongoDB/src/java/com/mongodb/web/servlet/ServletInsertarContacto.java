@@ -7,7 +7,6 @@ package com.mongodb.web.servlet;
 
 import com.mongodb.ejb.EJBContacto;
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.ejb.EJB;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
