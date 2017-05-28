@@ -25,7 +25,6 @@ public class EJBContacto {
     public EJBContacto() {
         this.contacto = new Contacto();
         this.daoContacto = new DaoContacto();
-        this.contacto.setSexo(true);
     }
 
     // Add business logic below. (Right-click in editor and choose
